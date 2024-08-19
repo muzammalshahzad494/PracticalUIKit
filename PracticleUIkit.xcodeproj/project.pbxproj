@@ -13,6 +13,11 @@
 		4E374F052C73B5340022F007 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4E374F042C73B5340022F007 /* Base */; };
 		4E374F072C73B5350022F007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E374F062C73B5350022F007 /* Assets.xcassets */; };
 		4E374F0A2C73B5350022F007 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4E374F092C73B5350022F007 /* Base */; };
+		4E374F202C73B8210022F007 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E374F1F2C73B8210022F007 /* UIComponents.swift */; };
+		4E374F242C73BE460022F007 /* ConstraintManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E374F232C73BE460022F007 /* ConstraintManager.swift */; };
+		4E374F262C73BF940022F007 /* ViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E374F252C73BF940022F007 /* ViewControllerWrapper.swift */; };
+		4E374F292C73C6860022F007 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E374F282C73C6860022F007 /* ViewUtils.swift */; };
+		4E374F2C2C73CF920022F007 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E374F2B2C73CF920022F007 /* TestViewController.swift */; };
 		94A65548264CF561602DD71B /* Pods_PracticleUIkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24EA9857AF3B0AFB86E2790 /* Pods_PracticleUIkit.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,15 @@
 		4E374F062C73B5350022F007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E374F092C73B5350022F007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E374F0B2C73B5350022F007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E374F1A2C73B7F90022F007 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		4E374F1B2C73B7F90022F007 /* ActionSheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetManager.swift; sourceTree = "<group>"; };
+		4E374F1C2C73B8010022F007 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		4E374F1D2C73B8010022F007 /* NavigationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtils.swift; sourceTree = "<group>"; };
+		4E374F1F2C73B8210022F007 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		4E374F232C73BE460022F007 /* ConstraintManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintManager.swift; sourceTree = "<group>"; };
+		4E374F252C73BF940022F007 /* ViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWrapper.swift; sourceTree = "<group>"; };
+		4E374F282C73C6860022F007 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		4E374F2B2C73CF920022F007 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		BE0D9818D8B9DAFEC5E3B62A /* Pods-PracticleUIkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticleUIkit.release.xcconfig"; path = "Target Support Files/Pods-PracticleUIkit/Pods-PracticleUIkit.release.xcconfig"; sourceTree = "<group>"; };
 		D24EA9857AF3B0AFB86E2790 /* Pods_PracticleUIkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticleUIkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +77,9 @@
 		4E374EFC2C73B5330022F007 /* PracticleUIkit */ = {
 			isa = PBXGroup;
 			children = (
+				4E374F2A2C73CF840022F007 /* Views */,
+				4E374F1E2C73B8180022F007 /* Componenets */,
+				4E374F192C73B7EF0022F007 /* Manager */,
 				4E374EFD2C73B5330022F007 /* AppDelegate.swift */,
 				4E374EFF2C73B5330022F007 /* SceneDelegate.swift */,
 				4E374F012C73B5340022F007 /* ViewController.swift */,
@@ -74,13 +91,42 @@
 			path = PracticleUIkit;
 			sourceTree = "<group>";
 		};
+		4E374F192C73B7EF0022F007 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4E374F1C2C73B8010022F007 /* Helper.swift */,
+				4E374F1D2C73B8010022F007 /* NavigationUtils.swift */,
+				4E374F1B2C73B7F90022F007 /* ActionSheetManager.swift */,
+				4E374F1A2C73B7F90022F007 /* AlertManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4E374F1E2C73B8180022F007 /* Componenets */ = {
+			isa = PBXGroup;
+			children = (
+				4E374F282C73C6860022F007 /* ViewUtils.swift */,
+				4E374F1F2C73B8210022F007 /* UIComponents.swift */,
+				4E374F232C73BE460022F007 /* ConstraintManager.swift */,
+				4E374F252C73BF940022F007 /* ViewControllerWrapper.swift */,
+			);
+			path = Componenets;
+			sourceTree = "<group>";
+		};
+		4E374F2A2C73CF840022F007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E374F2B2C73CF920022F007 /* TestViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		969606F8277B4AD3B22E24E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				003646A08D579E2B0B36CB67 /* Pods-PracticleUIkit.debug.xcconfig */,
 				BE0D9818D8B9DAFEC5E3B62A /* Pods-PracticleUIkit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,6 +237,11 @@
 			files = (
 				4E374F022C73B5340022F007 /* ViewController.swift in Sources */,
 				4E374EFE2C73B5330022F007 /* AppDelegate.swift in Sources */,
+				4E374F2C2C73CF920022F007 /* TestViewController.swift in Sources */,
+				4E374F262C73BF940022F007 /* ViewControllerWrapper.swift in Sources */,
+				4E374F292C73C6860022F007 /* ViewUtils.swift in Sources */,
+				4E374F242C73BE460022F007 /* ConstraintManager.swift in Sources */,
+				4E374F202C73B8210022F007 /* UIComponents.swift in Sources */,
 				4E374F002C73B5330022F007 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
